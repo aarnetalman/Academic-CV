@@ -1,0 +1,109 @@
+% Publication list of Aarne Talman
+% Companion to talman_aarne_cv.tex.
+%
+% Grouping follows the University of Helsinki Research Portal, which uses the
+% Finnish Ministry of Education and Culture publication types (A1, A4, G5 ...).
+% Docent application requirements (Faculty of Arts):
+%   - mark the publications sent for assessment (max 10, thesis included)
+%   - include accepted publications; keep anything not yet accepted clearly
+%     separate
+%   - state your own contribution to each joint publication
+% Red text marks details still to fill in; the macro \fillin{} prints it.
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+
+\newcommand{\fillin}[1]{\textcolor{red}{[#1]}}
+\newcommand{\me}{\textbf{Talman, A.}}
+% Markers
+\newcommand{\assessed}{$\bigstar$\,}          % sent for assessment
+\newcommand{\thesis}{\textsuperscript{Th}}    % included in the doctoral dissertation
+\newcommand{\contrib}[1]{\\\textit{Own contribution:} #1}
+
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+
+\setlist[enumerate]{label=\arabic*.,leftmargin=1.2cm,itemsep=5pt,topsep=2pt}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries List of Publications}\\[2pt]
+  {\large Aarne Talman}\\[2pt]
+  ORCID \href{https://orcid.org/0000-0002-3573-5993}{0000-0002-3573-5993} \quad 30 September 2026
+\end{center}
+
+\medskip
+Publications are grouped by publication type as in the University of Helsinki Research Portal, most recent first within each group. All listed publications are published.
+
+\smallskip
+\begin{tabular}{@{}ll@{}}
+  \thesis & Included in the doctoral dissertation (article-based) \\
+\end{tabular}
+
+\section{A1 Journal article (refereed), original research}
+\begin{enumerate}[series=pubs]
+  \item \thesis\ \me, Yli-Jyrä, A.\ \& Tiedemann, J.\ (2019). Sentence embeddings in NLI with iterative refinement encoders. \emph{Natural Language Engineering}, 25(4), 467--482. \href{https://doi.org/10.1017/S1351324919000202}{doi:10.1017/S1351324919000202}
+  \contrib{\fillin{own contribution}}
+\end{enumerate}
+
+\section{A4 Article in conference publication (refereed)}
+\begin{enumerate}[resume*=pubs]
+  \item Luukkonen, R., Burdge, J., Zosa, E., \me, Komulainen, V., Hatanpää, V., Sarlin, P.\ \& Pyysalo, S.\ (2025). Poro 34B and the blessing of multilinguality. In \emph{Proceedings of the Joint 25th Nordic Conference on Computational Linguistics and 11th Baltic Conference on Human Language Technologies (NoDaLiDa/Baltic-HLT 2025)}.
+  \contrib{\fillin{own contribution}}
+
+  \item Karlgren, J., Dürlich, L., Gogoulou, E., Guillou, L., Nivre, J., Sahlgren, M., \me\ \& Zahra, S.\ (2024). Overview of ELOQUENT 2024: Shared tasks for evaluating generative language model quality. In \emph{Experimental IR Meets Multilinguality, Multimodality, and Interaction: CLEF 2024}, Lecture Notes in Computer Science 14959, 53--72. Springer. \href{https://doi.org/10.1007/978-3-031-71908-0_3}{doi:10.1007/978-3-031-71908-0\_3}
+  \contrib{\fillin{own contribution}}
+
+  \item Bevendorff, J., Wiegmann, M., Karlgren, J., Dürlich, L., Gogoulou, E., \me, Stamatatos, E., Potthast, M.\ \& Stein, B.\ (2024). Overview of the ``Voight-Kampff'' generative AI authorship verification task at PAN and ELOQUENT 2024. In \emph{Working Notes of the Conference and Labs of the Evaluation Forum (CLEF 2024)}, CEUR Workshop Proceedings 3740, 2486--2506.
+  \contrib{\fillin{own contribution}}
+
+  \item Sahlgren, M., Karlgren, J., Dürlich, L., Gogoulou, E., \me\ \& Zahra, S.\ (2024). ELOQUENT 2024: Robustness task. In \emph{Working Notes of the Conference and Labs of the Evaluation Forum (CLEF 2024)}, CEUR Workshop Proceedings 3740, 703--707.
+  \contrib{\fillin{own contribution}}
+
+  \item Karlgren, J.\ \& \me\ (2024). ELOQUENT 2024: Topical quiz task. In \emph{Working Notes of the Conference and Labs of the Evaluation Forum (CLEF 2024)}, CEUR Workshop Proceedings 3740, 687--690.
+  \contrib{\fillin{own contribution}}
+
+  \item Karlgren, J., Dürlich, L., Gogoulou, E., Guillou, L., Nivre, J., Sahlgren, M.\ \& \me\ (2024). ELOQUENT CLEF shared tasks for evaluation of generative language model quality. In \emph{Advances in Information Retrieval: ECIR 2024}, Lecture Notes in Computer Science 14612, 459--465. Springer. \href{https://doi.org/10.1007/978-3-031-56069-9_63}{doi:10.1007/978-3-031-56069-9\_63}
+  \contrib{\fillin{own contribution}}
+
+  \item \thesis\ \me, Celikkanat, H., Virpioja, S., Heinonen, M.\ \& Tiedemann, J.\ (2023). Uncertainty-aware natural language inference with stochastic weight averaging. In \emph{Proceedings of the 24th Nordic Conference on Computational Linguistics (NoDaLiDa 2023)}. \url{https://aclanthology.org/2023.nodalida-1.37}
+  \contrib{\fillin{own contribution}}
+
+  \item \thesis\ \me, Apidianaki, M., Chatzikyriakidis, S.\ \& Tiedemann, J.\ (2022). How does data corruption affect natural language understanding models? A study on GLUE datasets. In \emph{Proceedings of the 11th Joint Conference on Lexical and Computational Semantics (*SEM 2022)}, 226--233. \href{https://doi.org/10.18653/v1/2022.starsem-1.20}{doi:10.18653/v1/2022.starsem-1.20}
+  \contrib{\fillin{own contribution}}
+
+  \item \thesis\ \me, Apidianaki, M., Chatzikyriakidis, S.\ \& Tiedemann, J.\ (2021). NLI data sanity check: Assessing the effect of data corruption on model performance. In \emph{Proceedings of the 23rd Nordic Conference on Computational Linguistics (NoDaLiDa 2021)}, 276--287. \url{https://aclanthology.org/2021.nodalida-main.28}
+  \contrib{\fillin{own contribution}}
+
+  \item \thesis\ \me\ \& Chatzikyriakidis, S.\ (2019). Testing the generalization power of neural network models across NLI benchmarks. In \emph{Proceedings of the 2019 ACL Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP}, 85--94. \href{https://doi.org/10.18653/v1/W19-4810}{doi:10.18653/v1/W19-4810}
+  \contrib{\fillin{own contribution}}
+
+  \item \me, Suni, A., Celikkanat, H., Kakouros, S., Tiedemann, J.\ \& Vainio, M.\ (2019). Predicting prosodic prominence from text with pre-trained contextualized word representations. In \emph{Proceedings of the 22nd Nordic Conference on Computational Linguistics (NoDaLiDa 2019)}, 281--290. \url{https://aclanthology.org/W19-6129}
+  \contrib{\fillin{own contribution}}
+
+  \item \me, Sulubacak, U., Vázquez, R., Scherrer, Y., Virpioja, S., Raganato, A., Hurskainen, A.\ \& Tiedemann, J.\ (2019). The University of Helsinki submissions to the WMT19 news translation task. In \emph{Proceedings of the Fourth Conference on Machine Translation (WMT 2019), Volume 2: Shared Task Papers}, 412--423.
+  \contrib{\fillin{own contribution}}
+\end{enumerate}
+
+\section{G5 Doctoral dissertation (article)}
+\begin{enumerate}[resume*=pubs]
+  \item \me\ (2024). \emph{Towards Natural Language Understanding: Developing and Assessing Approaches and Benchmarks}. Doctoral dissertation, Language Technology, University of Helsinki. Passed with distinction. Comprises publications 1, 8, 9, 10 and 11.
+\end{enumerate}
+
+\end{document}

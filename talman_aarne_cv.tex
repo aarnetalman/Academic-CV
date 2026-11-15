@@ -1,0 +1,161 @@
+% Curriculum vitae of Aarne Talman
+% Structure follows the TENK researcher's CV template (2020), on which the
+% Research Council of Finland CV template is based. The same CV serves the
+% University of Helsinki docent application (Faculty of Arts).
+%
+% Notes
+% - RCF limit: at most 3 pages. No photos, journal impact factors or
+%   citation metrics (e.g. h-index).
+% - Technical settings: check against the official RCF LaTeX template
+%   (aka.fi) before submitting to an RCF call.
+% - Text in red marks details still to fill in; the macro \fillin{} prints it.
+% - The publication list is a separate attachment for both RCF and docent.
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+
+\newcommand{\fillin}[1]{\textcolor{red}{[#1]}}
+
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{3pt}
+\titleformat{\subsection}{\normalsize\itshape}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{4pt}{1pt}
+
+% Dated entries: date in the left column, text in the right
+\newenvironment{entries}{%
+  \begin{list}{}{%
+    \setlength{\labelwidth}{2.7cm}%
+    \setlength{\labelsep}{0.3cm}%
+    \setlength{\leftmargin}{3.0cm}%
+    \setlength{\itemsep}{2pt}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\topsep}{1pt}%
+    \renewcommand{\makelabel}[1]{##1\hfil}}}%
+  {\end{list}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Curriculum Vitae}\\[2pt]
+  {\large Aarne Talman}
+\end{center}
+
+\section{Personal details and date of CV}
+\begin{entries}
+  \item[Surname] Talman
+  \item[First names] Aarne Johannes
+  \item[Identifier] ORCID \href{https://orcid.org/0000-0002-3573-5993}{0000-0002-3573-5993}
+  \item[Contact] aarne@talman.fi \quad \url{https://github.com/aarnetalman}
+  \item[Languages] Finnish (native), English (full professional), Swedish (limited working)
+  \item[Date of CV] 3 October 2026
+\end{entries}
+
+\section{Degrees}
+\begin{entries}
+  \item[19.03.2024] Doctor of Philosophy (PhD; Finnish: filosofian tohtori, FT), third-cycle degree, Language Technology, University of Helsinki, Finland. Dissertation passed with distinction. Dissertation: \emph{Towards Natural Language Understanding: Developing and Assessing Approaches and Benchmarks}. Supervisors: Prof.\ Jörg Tiedemann, Prof.\ Stergios Chatzikyriakidis (University of Crete) and Dr.\ Anssi Yli-Jyrä. Opponent: Prof.\ Vered Shwartz (University of British Columbia).\\
+  Awarding organisation: Faculty of Arts, University of Helsinki, P.O. Box 3 (Fabianinkatu 33), FI-00014 University of Helsinki, Finland.
+  \item[01.01.2007] MSc in Computational Linguistics and Formal Grammar, with Distinction (second-cycle degree), King's College London, United Kingdom. Dissertation: \emph{Path Grammars and the Generative Capacity of Dynamic Syntax}.
+  \item[31.07.2005] BSc in Philosophy, First Class Honours (first-cycle degree), London School of Economics and Political Science, United Kingdom. Thesis: \emph{Gödel's Incompleteness Theorems and the Limitations of Artificial Intelligence}.
+\end{entries}
+
+\section{Current employment}
+\begin{entries}
+  \item[10/2025--] Senior Manager, Software Development, AMD Silo AI, Helsinki, Finland (full-time). Responsible for AI software development, with a focus on large-model inference infrastructure and performance on AMD GPUs.
+  \item[Career stage] II (recognised researcher, R2) in the four-stage research career model, adapted: research carried out alongside industry employment.
+\end{entries}
+\subsection{Secondary positions}
+\begin{entries}
+  \item[2024--] Hourly-paid teacher (tuntiopettaja), Department of Digital Humanities, University of Helsinki.
+  \item[2023--] Visiting Scholar, Department of Digital Humanities, University of Helsinki. Research on natural language understanding and the evaluation of language models.
+\end{entries}
+
+\section{Previous work experience}
+\begin{entries}
+  \item[2024--2025] Senior Manager \& EMEA ML Lead, Accenture, Helsinki. Led the Machine Learning and Computational Science practice and the Model Customization capability, EMEA Centre for Advanced AI.
+  \item[2023--2024] Head of R\&D, SiloGen (Silo AI), Helsinki. Led research and development of open large language models.
+  \item[2023] Senior Manager, Accenture, Helsinki. Technology strategy advisory on AI and cloud computing.
+  \item[2021--2023] Senior AI Engineer (2021--2022), Lead AI Engineer (2022) and Lead AI Scientist (2023), Silo AI, London and Helsinki. Natural language processing, search, speech recognition and natural language understanding.
+  \item[2020--2021] UK CTO and Global ML Practice Lead, Nordcloud, United Kingdom.
+  \item[2019--2020] Founder and CEO, Basement AI, Finland and United Kingdom; research lab and consultancy in NLP and machine learning.
+  \item[2018--2024] Doctoral candidate, Language Technology, University of Helsinki. Member of the ERC-funded project \emph{Found in Translation: Natural Language Understanding with Cross-lingual Grounding} (FoTran, 2018--2023; PI Prof.\ Jörg Tiedemann).
+  \item[2012--2018] Management consulting: Associate Director (2016--2018) and Senior Consultant (2015--2016), Gartner; Consultant (2012--2015), Accenture; Helsinki.
+  \item[2011--2012] Research Student, London School of Economics, funded by the Alfred Kordelin Foundation. Reliability of non-linear models in economics and climate science.
+  \item[2006--2011] Software and R\&D management: Manager, Architecture and System Design (2008--2011) and Product Manager, Search (2009--2011), Nokia; Systems Analyst, Tieto (2006--2008); Software Developer, Valuatum (2006).
+\end{entries}
+
+\section{Research funding and grants}
+\begin{entries}
+  \item[2023] European Commission, DeployAI consortium (28 MEUR in total): work package lead, 1.15 MEUR.
+  \item[2023--2024] Business Finland R\&D funding, 6 MEUR, \emph{Methods and Tools for Trustworthy and Reliable Large Language Models}: responsible leader.
+  \item[2023] LUMI supercomputer, Extreme Scale Access, 12 million GPU hours (peer-reviewed) for large language model pre-training: co-PI.
+  \item[2011--2012] Alfred Kordelin Foundation, one-year personal research grant (London School of Economics).
+  \item[2011] British Society for the Philosophy of Science, doctoral scholarship (full PhD studentship for up to three years, London School of Economics): awarded, not taken up.
+  \item[2005--2006] Arts and Humanities Research Council (UK), Research Preparation Masters Scheme: full studentship and maintenance grant.
+\end{entries}
+
+\section{Research output}
+Open-source software and data, released under open licences:
+\begin{entries}
+  \item[2024] Contributor to Poro 34B, an openly released multilingual large language model for Finnish, English and code.
+  \item[2023] Uncertainty-aware NLI with stochastic weight averaging (code).
+  \item[2021--2022] NLI Data Sanity Check and NLU Dataset Diagnostics: code and corrupted NLI and GLUE datasets.
+  \item[2019] Prosody: system for predicting prosodic prominence from text (MIT licence), and the Helsinki Prosody Corpus, prosodic annotations for LibriTTS (CC BY 4.0).
+  \item[2018] HBMP: natural language inference system with the HBMP sentence encoder (MIT licence).
+\end{entries}
+
+\section{Research supervision and leadership experience}
+\begin{entries}
+  \item[Supervision] Master's theses, Language Technology, University of Helsinki: 1 completed and 1 in preparation.\\
+  2025: Jaakko Kuurne, \href{https://helda.helsinki.fi/items/ef08b419-a925-4e2e-b3bc-4e22d5e65448}{\emph{Fine-tuning Open-weight Large Language Model for Expense Classification}} (co-supervisor).\\
+  2026--: in preparation, co-supervised with Dr.\ Jussi Karlgren.
+  \item[Leadership] Responsible leader of a 6 MEUR Business Finland programme on trustworthy LLMs (2023--2024); Head of R\&D at SiloGen, leading LLM development and co-PI of a 12 million GPU-hour LUMI allocation (2023--2024); work package lead in the DeployAI consortium (2023); practice lead for Machine Learning and Computational Science at Accenture (2024--2025).
+\end{entries}
+
+\section{Teaching merits}
+% Pedagogical training: add here once completed (e.g. university pedagogy studies).
+\begin{entries}
+  \item[2024--] Teacher, \emph{Large Language Models and Generative AI for NLP}, Master's level, University of Helsinki, every autumn since 2024, with Dr.\ Jussi Karlgren and Dr.\ Dmitry Kan. Designed the course syllabus; created and taught the lectures and coding labs for 4 of the 7 weeks (generative AI and LLM foundations, prompting, fine-tuning and the final project); assesses the final reports. Course materials openly available on GitHub (Helsinki-NLP).
+  \item[2020] Co-instructor, \emph{Natural Language Understanding and Representation Learning} (LDA-T3115), Master's level, University of Helsinki, with Dr.\ Alessandro Raganato.
+  \item[2019] Teaching assistant, \emph{Machine Learning for Linguists} (KIK-LG210, BSc level) and \emph{A Practical Introduction to Modern Neural Machine Translation} (MSc level), University of Helsinki. Lab monitor, Lisbon Machine Learning School (LxMLS 2019).
+\end{entries}
+
+\section{Other key academic merits}
+\subsection{Organising scientific events}
+\begin{entries}
+  \item[2024--] Co-organiser of ELOQUENT, a lab of shared tasks for evaluating generative language models at CLEF, since its first edition. CLEF 2024: organiser of the Topical Quiz task and co-organiser of the Robustness task. CLEF 2027: co-organiser of the proposed Fragments task (with Prof.\ Stergios Chatzikyriakidis) and of the Voight-Kampff and Robustness tasks.
+\end{entries}
+\subsection{Programme committees and reviewing}
+\begin{entries}
+  \item[Journal] Natural Language Engineering (2022--).
+  \item[Conferences] NAACL 2027 Demo Track; EMNLP 2024 Demo Track; COLM 2024; *SEM 2024; EMNLP 2021--2023; ACL-IJCNLP 2021; *SEM 2019--2021; NeurIPS 2021--2022; IJCAI 2020; ECAI 2019; NoDaLiDa 2019.
+  \item[Workshops] UncertaiNLP at EMNLP 2025; BlackboxNLP at EMNLP 2024; UncertaiNLP at EACL 2024; BlackboxNLP and GenBench at EMNLP 2023; BlackboxNLP at EMNLP 2021; DL4NLP at NoDaLiDa 2019; RANLP 2019 Student Workshop.
+\end{entries}
+\subsection{Talks}
+Numerous talks at academic and industry events. A selection:
+\begin{entries}
+  \item[2022] Talks on multilingual, multimodal vector search at Berlin Buzzwords (with Dr.\ Dmitry Kan) and the ValleyML AI Expo.
+  \item[2017--2022] Conference presentations at *SEM 2022 (Seattle), NoDaLiDa 2021 (Reykjavik) and NoDaLiDa 2019 (Turku); invited talk at CLASP, University of Gothenburg (2019); research seminar talks, University of Helsinki (2017--2019).
+  \item[2018] Industry talks at Gartner Symposium, Barcelona, and AI Monday, Helsinki.
+\end{entries}
+
+\section{Scientific and societal impact}
+\begin{entries}
+  \item[Open science] Code and data from the doctoral research released openly.
+  \item[Utilisation] NLU and LLM research applied at SiloGen, Accenture and AMD Silo AI.
+  \item[Media] Interviews on language model research in TiVi (2024, twice); university press release on the doctoral research (2024); AMD ROCm Blogs (2025).
+\end{entries}
+
+\end{document}
